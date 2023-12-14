@@ -1,4 +1,5 @@
-*, *:before,
+*,
+*:before,
 *:after {
   box-sizing: border-box;
 }
@@ -28,7 +29,32 @@ strike,
 strong,
 sub,
 sup,
-tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -40,7 +66,11 @@ tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, th
   text-size-adjust: none;
 }
 
-footer, header, nav, section, main {
+footer,
+header,
+nav,
+section,
+main {
   display: block;
 }
 
@@ -48,16 +78,19 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
 blockquote:before,
-blockquote:after, q:before,
+blockquote:after,
+q:before,
 q:after {
   content: '';
   content: none;
