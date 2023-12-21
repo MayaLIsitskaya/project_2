@@ -118,7 +118,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 12px;
   overflow-x: hidden;
-  background-color: linear-gradient(110deg, rgb(20, 19, 20) 46%, rgb(6, 10, 38) 95%);
+  background: linear-gradient(110deg, rgb(20, 19, 20) 46%, rgb(6, 10, 38) 95%);
 }
 
 .container {
