@@ -9,6 +9,9 @@
 .copyright {
   @include flex();
 
+  margin: 0 $m-10;
+  color: $color-white;
+
   .navbar__lists {
     justify-content: center;
   }

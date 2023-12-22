@@ -118,7 +118,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 12px;
   overflow-x: hidden;
-  background: linear-gradient(110deg, rgb(20, 19, 20) 46%, rgb(6, 10, 38) 95%);
+  background: #ffffff;
 }
 
 .container {
@@ -215,6 +215,7 @@ body {
   display: inline-block;
   width: 140px;
   height: 45px;
+  margin: 4rem;
   text-decoration: none;
   line-height: 45px;
   border-radius: 45px;
@@ -250,6 +251,7 @@ body {
 .swiper {
   width: 100%;
   height: auto;
+  display: flex;
 }
 .swiper-slide {
   display: flex;
@@ -427,6 +429,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 10rem;
+  color: #ffffff;
 }
 .copyright .navbar__lists {
   justify-content: center;

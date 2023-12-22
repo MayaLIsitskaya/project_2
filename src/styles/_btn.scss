@@ -4,6 +4,7 @@
   display: inline-block;
   width: 140px;
   height: 45px;
+  margin: $m-4;
 
   text-decoration: none;
   line-height: 45px;
@@ -30,7 +31,7 @@
   }
 
   &__add {
-  background: $color-green;
+    background: $color-green;
 }
 
   &__up {
@@ -43,5 +44,4 @@
       display: none;
     }
   }
-
 }

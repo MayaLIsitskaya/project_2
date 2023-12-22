@@ -1,9 +1,10 @@
 .swiper {
   width: 100%;
   height: auto;
+  display: flex;
 
   &-slide {
-    @include flex();
+  @include flex();
   }
 
   &-scrollbar {
