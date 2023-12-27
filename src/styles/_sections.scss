@@ -2,81 +2,89 @@
   padding: $p-3 0;
 
   &__block {
-  @include flex();
+    @include flex();
 
-    &_image {
+    &_description {
+      @include transition();
       position: relative;
-
       width: 50%;
-      height: 30rem;
+      padding: $p-3;
+
+      text-align: center;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &_image {
+        position: relative;
+
+        width: 50%;
+        height: 30rem;
+      }
     }
 
-    &_tiny {
+    &__image {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-1,
+    &-2 {
+      margin-top: $m-10;
+    }
+
+    &-4 {
+      .cards {
+        position: absolute;
+        top: 18rem;
+        z-index: 2;
+        right: 7rem;
+      }
+    }
+
+    &-6 {
+      .title-description {
+        position: absolute;
+        left: 25rem;
+
+        transform: rotate(-90deg);
+        width: 100vw;
+      }
+    }
+
+    &-product {
+      margin-top: $m-6;
+    }
+  }
+
+  &__box {
       position: relative;
-      background-color: $box-shadow;
+      background-color: $box-shadow-third;
       border: none;
       border-radius: 10px;
 
       padding: $p-0-5;
       margin-bottom: $m-1-5;
-    }
 
-    &_border {
+    &_border-1 {
       @include flex();
 
-      background-color: $box-shadow;
+      background-color: $box-shadow-third;
       border: none;
       border-radius: 10px;
 
       padding: $p-1;
       margin-bottom: $m-1-5;
     }
-  }
 
-  &__description {
-    @include transition();
-    position: relative;
-    width: 50%;
-    padding: $p-3;
+    &_border-2 {
+      background-color: $box-shadow;
+      color: $color-green;
+      border-radius: 10px;
 
-    text-align: center;
-
-    &:hover {
       cursor: pointer;
     }
-  }
-
-  &__image {
-    display: flex;
-    justify-content: center;
-  }
-
-  &-1,
-  &-2 {
-    margin-top: $m-10;
-  }
-
-  &-4 {
-    .cards {
-      position: absolute;
-      top: 18rem;
-      z-index: 2;
-      right: 7rem;
-    }
-  }
-
-  &-6 {
-    .title-description {
-      position: absolute;
-      left: 25rem;
-
-      transform: rotate(-90deg);
-      width: 100vw;
-    }
-  }
-
-  &-product {
-    margin-top: $m-6;
   }
 }
 

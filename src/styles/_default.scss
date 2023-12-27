@@ -41,6 +41,11 @@ body {
     text-align: center;
     color: $color-green;
 
+    &__left {
+      padding-left: $p-5;
+
+      color: $color-green;
+    }
   }
 
   &-description {
@@ -56,8 +61,7 @@ body {
 
     &__vertical {
       position: absolute;
-      top: 1px;
-      bottom: -1px;
+      top: 14px;
       right: 5px;
 
       writing-mode: vertical-lr;

@@ -143,6 +143,10 @@ body {
   text-align: center;
   color: #20da7d;
 }
+.title-section__left {
+  padding-left: 5rem;
+  color: #20da7d;
+}
 .title-description {
   padding: 0 0.5rem;
   font-size: 12px;
@@ -153,8 +157,7 @@ body {
 }
 .title-description__vertical {
   position: absolute;
-  top: 1px;
-  bottom: -1px;
+  top: 14px;
   right: 5px;
   writing-mode: vertical-lr;
   color: #ffffff;
@@ -372,60 +375,66 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.section__block_image {
-  position: relative;
-  width: 50%;
-  height: 30rem;
-}
-.section__block_tiny {
-  position: relative;
-  background-color: rgba(88, 87, 88, 0.4);
-  border: none;
-  border-radius: 10px;
-  padding: 0.5rem;
-  margin-bottom: 1.5rem;
-}
-.section__block_border {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgba(88, 87, 88, 0.4);
-  border: none;
-  border-radius: 10px;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
-}
-.section__description {
+.section__block_description {
   transition: all 0.3s;
   position: relative;
   width: 50%;
   padding: 3rem;
   text-align: center;
 }
-.section__description:hover {
+.section__block_description:hover {
   cursor: pointer;
 }
-.section__image {
+.section__block_description_image {
+  position: relative;
+  width: 50%;
+  height: 30rem;
+}
+.section__block__image {
   display: flex;
   justify-content: center;
 }
-.section-1, .section-2 {
+.section__block-1, .section__block-2 {
   margin-top: 10rem;
 }
-.section-4 .cards {
+.section__block-4 .cards {
   position: absolute;
   top: 18rem;
   z-index: 2;
   right: 7rem;
 }
-.section-6 .title-description {
+.section__block-6 .title-description {
   position: absolute;
   left: 25rem;
   transform: rotate(-90deg);
   width: 100vw;
 }
-.section-product {
+.section__block-product {
   margin-top: 6rem;
+}
+.section__box {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.section__box_border-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+.section__box_border-2 {
+  background-color: rgba(88, 87, 88, 0.4);
+  color: #20da7d;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .line {
