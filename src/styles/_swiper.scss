@@ -1,25 +1,16 @@
 .swiper {
   width: 100%;
   height: auto;
-  display: flex;
-
-  &-slide {
-  @include flex();
-  }
 
   &-scrollbar {
     bottom: 0;
 
-    &-drag {
+    &-custom-drag {
       background-color: $color-green;
     }
   }
-}
 
-.line {
-  .swiper {
-    &-scrollbar {
-      display: none;
-    }
+  &-slide__content {
+  @include flex();
   }
 }

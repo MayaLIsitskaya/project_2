@@ -10,6 +10,27 @@
       width: 50%;
       height: 30rem;
     }
+
+    &_tiny {
+      position: relative;
+      background-color: $box-shadow;
+      border: none;
+      border-radius: 10px;
+
+      padding: $p-0-5;
+      margin-bottom: $m-1-5;
+    }
+
+    &_border {
+      @include flex();
+
+      background-color: $box-shadow;
+      border: none;
+      border-radius: 10px;
+
+      padding: $p-1;
+      margin-bottom: $m-1-5;
+    }
   }
 
   &__description {
@@ -58,6 +79,7 @@
     margin-top: $m-6;
   }
 }
+
 
 .line {
   border-bottom: 2px solid $color-green;

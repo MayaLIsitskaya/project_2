@@ -12,9 +12,8 @@ body {
   font-size: $font-12;
 
   overflow-x: hidden;
-  //
-  //background: $primary-color;
-  background: $color-white;
+
+  background: $primary-color;
 }
 
 .container {
@@ -54,6 +53,18 @@ body {
     color: $color-blue;
     letter-spacing: 1px;
     line-height: 1.3;
+
+    &__vertical {
+      position: absolute;
+      top: 1px;
+      bottom: -1px;
+      right: 5px;
+
+      writing-mode: vertical-lr;
+
+      color: $color-white;
+      font-size: $font-8;
+    }
   }
 }
 

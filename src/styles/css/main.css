@@ -118,7 +118,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 12px;
   overflow-x: hidden;
-  background: #ffffff;
+  background: linear-gradient(110deg, rgb(20, 19, 20) 46%, rgb(6, 10, 38) 95%);
 }
 
 .container {
@@ -150,6 +150,15 @@ body {
   color: rgba(231, 227, 255, 0.7960784314);
   letter-spacing: 1px;
   line-height: 1.3;
+}
+.title-description__vertical {
+  position: absolute;
+  top: 1px;
+  bottom: -1px;
+  right: 5px;
+  writing-mode: vertical-lr;
+  color: #ffffff;
+  font-size: 8px;
 }
 
 .lists {
@@ -251,22 +260,17 @@ body {
 .swiper {
   width: 100%;
   height: auto;
-  display: flex;
-}
-.swiper-slide {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 .swiper-scrollbar {
   bottom: 0;
 }
-.swiper-scrollbar-drag {
+.swiper-scrollbar-custom-drag {
   background-color: #20da7d;
 }
-
-.line .swiper-scrollbar {
-  display: none;
+.swiper-slide__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar {
@@ -372,6 +376,24 @@ body {
   position: relative;
   width: 50%;
   height: 30rem;
+}
+.section__block_tiny {
+  position: relative;
+  background-color: rgba(88, 87, 88, 0.4);
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.section__block_border {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(88, 87, 88, 0.4);
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
 }
 .section__description {
   transition: all 0.3s;
