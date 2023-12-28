@@ -6,6 +6,7 @@
 
     &_description {
       @include transition();
+
       position: relative;
       width: 50%;
       padding: $p-3;
