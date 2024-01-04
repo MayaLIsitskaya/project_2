@@ -4,12 +4,13 @@
   &__block {
     @include flex();
 
+
     &_description {
       @include transition();
 
       position: relative;
       width: 50%;
-      padding: $p-3;
+      padding: $p-2;
 
       text-align: center;
 
@@ -61,17 +62,17 @@
 
   &__box {
       position: relative;
-      background-color: $box-shadow-third;
+      background-color: $box-shadow;
       border: none;
       border-radius: 10px;
 
-      padding: $p-0-5;
+      padding: $p-0-5 ;
       margin-bottom: $m-1-5;
 
     &_border-1 {
       @include flex();
 
-      background-color: $box-shadow-third;
+      background-color: $box-shadow;
       border: none;
       border-radius: 10px;
 
@@ -87,8 +88,71 @@
       cursor: pointer;
     }
   }
+
+  &__circle {
+    position: relative;
+  }
 }
 
+
+.circle {
+  width: 500px;
+  height: 500px;
+
+  border: solid $color-green;
+  border-radius: 50%;
+
+  .child-1 {
+    position: absolute;
+    top: 5rem;
+    width: 500px;
+    height: 400px;
+
+    border: solid $color-green;
+    border-radius: 50%;
+  }
+
+  .child-2 {
+    position: absolute;
+    top: 10rem;
+    width: 500px;
+    height: 350px;
+
+    border: solid $color-green;
+    border-radius: 50%;
+  }
+
+  .child-3 {
+    position: absolute;
+    top: 15rem;
+    width: 500px;
+    height: 300px;
+
+    border: solid $color-green;
+    border-radius: 50%;
+  }
+
+  .child-4 {
+    position: absolute;
+    top: 20rem;
+    width: 500px;
+    height: 250px;
+
+    border: solid $color-green;
+    border-radius: 50%;
+  }
+
+  .child-5 {
+    position: absolute;
+    top: 33rem;
+    width: 500px;
+    height: 50px;
+
+    border: solid $color-green;
+    border-radius: 50%;
+  }
+
+}
 
 .line {
   border-bottom: 2px solid $color-green;

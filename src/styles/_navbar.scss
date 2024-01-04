@@ -3,7 +3,7 @@
 
   &__lists {
     @include flex();
-    width: 100%;
+    gap: 1rem;
 
     &_footer {
       flex-direction: column;

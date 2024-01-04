@@ -4,7 +4,6 @@ const swiper = new Swiper('.swiper', {
     loop: true,
     scrollbar: {
         el: '.swiper-scrollbar',
-        dragClass: 'swiper-scrollbar-custom-drag',
     },
 });
 
